@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: #16425B;
+    color: #F2F3F0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2F6690;
+    padding-bottom: 1%;
+}
+
+header h1{
+    padding-left: 2.5%;
+    padding-top: .75%;
+}
+
+footer {
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #0D2634;
+}
+
+footer h3{
+    text-align: left;
+    padding-left: 2.5%;
+    color: #F2F3F0;
+    font-size: 0.8em;
+}
+
+footer h3 a{
+    color: #F2F3F0;
+    text-decoration: none;
+}
+
+footer h3 a:hover{
+    text-decoration: underline;
+}
+
+.bio {
+    text-align: left;
+    padding-left: 45%;
+    padding-top: 7.5%;
+    margin-left: 5%;
+    display: block;
+}
+
+.bio h1{
+    display: flex;
+    justify-content: left;
+    font-size: 4em;
+    border-top: 2px solid #D9DCD6;
+    margin-right: 25%;
+    overflow: hidden;
+}
+
+.bio p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.75em;
+    border-bottom: 2px solid #D9DCD6;
+    margin-right: 25%;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.hayden{
+    display: inline;
+    justify-content: left;
+    background-color: #D9DCD6;
+}
+
+.hayden img{
+    float: left;
+    max-width: 400px;
+    margin-left: 12.5%;
+    margin-top: 35px;
+    border: 10px solid #D9DCD6;
+}
+
+.content {
+    gap: 20px;
+    max-width: 1400px;
+    justify-content: center;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center items horizontally */
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .bio {
+        max-width: 600px;       /* Set a reasonable max width */
+        padding: 20px;          /* Optional: padding for spacing */
+        margin: 0 auto;         /* Center horizontally */
+    }
+
+    .bio h1, .bio p {
+        margin: 0 auto;         /* Center text within the bio */
+        text-align: center;
+    }
+
+    .hayden img {
+        margin: 0 auto;         /* Center image */
+        display: block;
+    }
+}
