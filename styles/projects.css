@@ -92,28 +92,16 @@ footer h3 a:hover{
     margin: auto;
 }
 
-.about_me h1 {
-    margin: auto;
-    justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 3%;
-    display: flex;
-    font-size: 4em;
-}
-
-.about_me p {
-    margin: auto;
-    text-align: center;
-    justify-content: center;
+.projects p {
     font-size: 2em;
-    max-width: 50%;
+    max-width: 100%;
 }
 
-.skills {
+.projects {
     padding-bottom: 5%;
 }
 
-.skills h1{
+.projects h1{
     margin: auto;
     justify-content: center;
     padding-top: 3%;
@@ -122,35 +110,30 @@ footer h3 a:hover{
     font-size: 4em;
 }
 
-.skills ul {
+.projects ul {
     margin: auto;
     list-style-type: none;
     max-width: 50%;
     justify-content: center;
 }
 
-.skills h2 {
+.projects h2 {
     font-size: 2em;
     padding-bottom: 2%;
 }
 
-.skills p {
+.projects a {
+    color: #F2F3F0;
+    text-decoration: none;
+}
+
+.projects a:hover{
+    text-decoration: underline;
+}
+
+.projects p {
     padding-bottom: 2%;
     font-size: 1.5em;
-}
-
-.images {
-    justify-content: center;
-    align-items: center;
-}
-
-#linkedin {
-    max-width: 100px;
-}
-
-#github {
-    max-width: 75px; 
-    padding-bottom: 1.5%;   
 }
 
 @media (max-width: 1300px) {
@@ -159,14 +142,13 @@ footer h3 a:hover{
         display: flex;
         align-items: flex-start;
         gap: 20px;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;    /* Center items horizontally */
-        text-align: center;
+        flex-direction: column; 
+        align-items: center;    
         padding-top: 35px;
     }
 
     .content p {
-        max-width: 80%;
+        max-width: 100%;
     }
 
 }
@@ -219,6 +201,17 @@ footer h3 a:hover{
         padding-left: 0;
     }
 
+    .content {
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        max-width: 100%;
+    }
+
+    .projects ul{
+        max-width: 80%;
+    }
+
     nav ul li a {
         color: #F2F3F0;
         text-decoration: none;
@@ -238,22 +231,9 @@ footer h3 a:hover{
         padding-top: 1%;
     }
 
-    .hayden img {
-        max-width: 250px;
-    }
-
     .content {
         font-size: 0.8em;
-        width: 80%;
-    }
-
-    #linkedin {
-        max-width: 50px;
-    }
-    
-    #github {
-        max-width: 40px; 
-        padding-bottom: 2%; 
+        width: 100%;
     }
 
 }
