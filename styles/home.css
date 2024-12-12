@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    --background: #16425B;
+    --header: #2E658E;
+    --text: #F2F3F0;
 }
 
 html, body {
@@ -11,14 +14,14 @@ html, body {
 }
 
 body {
-    background-color: #16425B;
-    color: #F2F3F0;
+    background-color: var(--background);
+    color: var(--text);
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #2F6690;
+    background-color: var(--header);
     padding-bottom: 1%;
     box-shadow: 0px 0px 20px #0a2230;
 }
@@ -33,7 +36,7 @@ header h1{
 }
 
 header h1 a {
-    color: #F2F3F0;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -51,7 +54,7 @@ header nav ul li {
 }
 
 nav ul li a {
-    color: #F2F3F0;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -72,12 +75,12 @@ footer {
 footer h3 {
     text-align: left;
     padding-left: 2.5%;
-    color: #F2F3F0;
+    color: var(--text);
     font-size: 0.8em;
 }
 
 footer h3 a {
-    color: #F2F3F0;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -97,7 +100,7 @@ footer h3 a:hover{
     display: flex;
     justify-content: left;
     font-size: 4em;
-    border-top: 2px solid #D9DCD6;
+    border-top: 2px solid var(--text);
     margin-right: 25%;
     overflow: hidden;
 }
@@ -106,7 +109,7 @@ footer h3 a:hover{
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: 1.75em;
-    border-bottom: 2px solid #D9DCD6;
+    border-bottom: 2px solid var(--text);
     margin-right: 25%;
     margin-bottom: 50px;
     overflow: hidden;
@@ -115,7 +118,7 @@ footer h3 a:hover{
 .hayden {
     display: inline;
     justify-content: left;
-    background-color: #D9DCD6;
+    background-color: var(--text);
     border-radius: 50px;
 }
 
@@ -125,7 +128,7 @@ footer h3 a:hover{
     margin-left: 12.5%;
     margin-top: 35px;
     border-radius: 50px;
-    border: 1em solid #D9DCD6;
+    border: 1em solid var(--text);
     box-shadow: 0px 8px 25px #0a2230;
 }
 
@@ -246,7 +249,7 @@ footer h3 a:hover{
     }
 
     nav ul li a {
-        color: #F2F3F0;
+        color: var(--text);
         text-decoration: none;
         border-bottom: 2px solid transparent;
     }
