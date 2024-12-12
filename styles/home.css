@@ -204,7 +204,7 @@ footer h3 a:hover{
     border: 5px solid var(--header);
     border-radius: 50px;
     padding: 3%;
-    margin-bottom: 7%;
+    margin-bottom: 35px;
 }
 
 .contact-left button:hover {
